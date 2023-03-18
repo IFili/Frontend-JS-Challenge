@@ -3,7 +3,6 @@ function populateData() {
         .then(response => response.json())
         .then(data => {
 
-            console.log(data);
             const imageWrappers = document.querySelectorAll('.imageWrapper');
             let counter = 0; // initialize the counter variable
             data.forEach((jsonData, index) => {
